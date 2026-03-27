@@ -1,0 +1,85 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/solids/protos/SolidBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/animals/protos/Dog.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.271399144065079 -0.23386522396978085 -0.9336217444009682 4.496544574310491
+  position 0.06389662638725534 -1.0449369598120624 0.6659545204900004
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation 0 0 0.05
+}
+SolidBox {
+  translation 0.260526 0.34 0.105884
+  rotation 0 -1 0 4.692820414042842e-06
+  name "box(3)"
+  size 0.3 0.3 0.1
+  appearance PBRAppearance {
+    baseColor 1 0 0
+    baseColorMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/default/worlds/textures/tagged_wall.jpg"
+      ]
+    }
+    roughness 0.5
+    metalness 0
+    emissiveColor 0.5 0 0
+  }
+}
+SolidBox {
+  translation -0.31 -0.3 0.1
+  name "box(4)"
+  size 0.3 0.3 0.1
+  appearance PBRAppearance {
+    baseColor 0 0 1
+    baseColorMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/default/worlds/textures/tagged_wall.jpg"
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation 0.28 -0.3 0.1
+  name "box(1)"
+  size 0.3 0.3 0.1
+  appearance PBRAppearance {
+    baseColor 0 1 0
+    baseColorMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/default/worlds/textures/tagged_wall.jpg"
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+E-puck {
+  hidden position_0_0 43254.34226038498
+  hidden position_0_1 50058.75304015882
+  hidden linearVelocity_0 -0.02614531743223904 0.05721322389293114 1.2795694232468524e-06
+  hidden angularVelocity_0 -0.006314569293146273 -0.0028856158593609867 -3.360365529750308e-08
+  hidden rotation_1 0 1 0 0.8946057607097849
+  hidden rotation_2 0 -1 0 5.667487448122206
+  translation -0.0976037097197199 -0.009381980054075206 0.049935877486815036
+  rotation -0.00022989797508476522 0.00014770810284522501 0.9999999626646179 1.9994399626752972
+  controller "guru_araip_cw2"
+}
+Dog {
+  translation -0.264266 0.271919 0.04
+  rotation 0 0 1 -2.3561953071795863
+  scale 0.2
+}
